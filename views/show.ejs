@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Preview:
+        <%=blog.name%>
+    </title>
+</head>
+
+<body style="padding:10px">
+
+    <div class="card shadow-lg rounded" style="padding-top:150px; background-color: #09486B;">
+        <div class="row" style="padding-top: 20px;padding-left:50px;">
+            <div class="col-2">
+
+                <a href="/" class="rounded-pill shadow p-2 d-flex align-items-center justify-content-center" style="text-decoration:none;">
+                    <i class="material-icons mr-2" style="color:black">arrow_left
+                        </i> <span class="" style="color:black">Back</span>
+                </a>
+            </div>
+            <div class="col-8">
+                <center>
+                    <h1>
+
+                        Preview:
+                        <%= blog.name %>
+                    </h1>
+                </center>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12" style="margin-top: -300px; margin-trim: 50px;">
+                <%- include ('viewCard') -%>
+                    <!--img src="/uploads/images/<!%= blog.img %>" class="card-img" alt="..."-->
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <!--div class="d-flex align-items-end mt-3">
+            <div class="mr-2">
+                <img src="/uploads/images/<!%= blog.img  %>" class="rounded-circle" style="width: 60px; height: 60px;">
+            </div>
+            <div class=" flex-grow-1">
+                <h5 class="" style="font-size: 16px; line-height: 0.5rem;">
+                    <span><b> <!%= blog.company %></b></span></h5>
+                <p style="font-size: 12px; line-height: 0.2rem;">
+                    <!%= blog.timeCreated.toLocaleDateString() %> %></p>
+            </div>
+
+        </div-->
+
+
+
+    </div>
+    <div class="row" style="padding-top:20px;padding-left: 30px;">
+        <div class="col-2">
+            <a href="/" class="rounded-pill shadow p-2 d-flex align-items-center justify-content-center bg-white" style="text-decoration:none;">
+                <i class="material-icons mr-2" style="color:black">arrow_left
+                    </i> <span class="" style="color:black">Back</span>
+            </a>
+
+        </div>
+        <div class="col-7">
+            <p></p>
+        </div>
+        <div class="col-3">
+            <button class="rounded-pill shadow p-2 d-flex align-items-center justify-content-center btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+                Get Shareable link
+                </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="margin-left: 330px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Copy shareable link</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" value="https://vinod-well-lit-luminaires.netlify.app/" id="myInput1">
+                            <button onclick="myFunction1()">Copy text</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction1() {
+            var copyText = document.getElementById("myInput1");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            //alert("Copied the text: " + copyText.value);
+        }
+    </script>
+
+</body>
+
+</html>

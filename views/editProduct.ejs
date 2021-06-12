@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+    <title>New</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css'>
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="\css\multiStepForm.css">
+    <style>
+        @charset "UTF-8";
+        /*font Variables*/
+        /*Color Variables*/
+        
+        @import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <!-- Multi step form -->
+    <section class="multi_step_form">
+        <form action="/blogs/editProduct/<%= blog.id %>?_method=PUT" method="POST" id="msform" enctype="multipart/form-data">
+
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li>Personal details</li>
+                <li>About Section</li>
+                <li class="active">Product Section</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <div class="form-row align-items-center">
+                    <div class="col-md-3 ">
+                        <h5>Product 1</h5>
+                    </div>
+                    <div class="form-group col-md-9 ">
+                        <input type="text " class="form-control" placeholder="Name of product" value="<%= blog.product_name%>" name="product_name">
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="col-md-3 ">
+                        <h5>Description</h5>
+                    </div>
+                    <div class="form-group col-md-9 ">
+                        <input type="text " class="form-control" placeholder="Description about the product" value="<%= blog.product_desc%>" name="product_desc">
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="col-md-3 ">
+                        <h5>Product Images</h5>
+                    </div>
+
+                    <div class="form-group col-md-9 ">
+                        <input type="file" name="productimg" id="image" class="form-control-file">
+                    </div>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <a href="#" class="btn btn-success d-flex align-items-center"><i
+                            class="material-icons mr-2">add_circle</i>
+                        Add Product</a>
+
+                </div>
+                <br>
+                <button type="button " class="action-button previous previous_button ">Back</button>
+                <button type="button " class="next action-button ">Save</button>
+                <!--button type="submit" formaction="/blogs" method="POST" enctype="multipart/form-data" class="action-button ">Save</a></button-->
+            </fieldset>
+
+
+
+        </form>
+    </section>
+    <!-- End Multi step form -->
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js "></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script>
+
+    <script src='\js\multiStepForm.js'></script>
+
+
+
+</body>
+
+</html>

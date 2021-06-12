@@ -1,0 +1,635 @@
+:root {
+    --color1: #09486B;
+    --color2: #1593A2;
+    --color3: #B7C0BD;
+    --color4: #FF9899;
+    --color5: #FBDE44;
+    --color6: #54B560;
+}
+
+#MainContainer {
+    background-color: white;
+    max-width: 90%;
+    height: auto;
+    align-items: center;
+    border-width: 10px;
+    border-color: var(--color2);
+    border-style: solid;
+    top: 5%;
+    position: relative;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Headings {
+    margin: 15px;
+    text-transform: uppercase;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--color1);
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+button:focus {
+    outline: 0;
+}
+
+a:hover {
+    transform: scale(1.03);
+}
+
+i.MainContainerIcons {
+    display: inline-block;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: var(--color2);
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.5em;
+    color: white;
+    margin-left: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    color: var(--color2);
+    font-size-adjust: 0.58;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.aInContact {
+    color: black;
+}
+
+.fas {
+    font-size: 24px;
+}
+
+.fa {
+    font-size: 24px;
+    color: white;
+}
+
+
+/*Home Section*/
+
+#CompanyLogo {
+    max-width: 50%;
+}
+
+#ContactContainer {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info-wrapper {
+    display: flex;
+    text-align: left;
+}
+
+
+/*Footer Section*/
+
+#footer {
+    margin-top: 5px;
+    bottom: 0;
+    position: fixed;
+    width: 105%;
+    color: white;
+    background-color: var(--color2);
+    padding: 10px 5px 0 5px;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-top: var(--color4);
+    border-style: solid;
+    border-top-width: 5px;
+    border-bottom: none;
+    font-size: 50vmin;
+    justify-content: center;
+}
+
+.footer_div {
+    font-size: 50vmin;
+}
+
+.footer_div>a:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.25);
+}
+
+.footer_text {
+    color: white;
+    font-size: 3vmin;
+}
+
+
+/*About Section*/
+
+.get_connected_icon {
+    display: inline-block;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/*Products Section*/
+
+.Product_Container {
+    border-width: 2px;
+    border-color: var(--color4);
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Product_Text_Container {
+    padding: 10px;
+    overflow-wrap: hidden;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.Product_Heading_Container {
+    background-color: var(--color5);
+    text-align: center;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Product_Enquiry_Button {
+    background-color: var(--color6);
+    color: white;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: var(--color1);
+    padding: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.photos_in_product {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    ;
+}
+
+
+/*Payments Section*/
+
+.Payment_Logo {
+    height: 60px;
+    ;
+}
+
+.Payment_Container {
+    background-color: white;
+    border-color: var(--color4);
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Payment_QR {
+    width: 80%;
+}
+
+
+/*Gallery Section*/
+
+.videos {
+    width: 90%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: var(--color4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.videos:hover {
+    transform: scale(1.03);
+}
+
+.photos {
+    overflow: hidden;
+    width: 90%;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.photos:hover {
+    transform: scale(1.03);
+}
+
+.TextInGallery {
+    margin-left: 30px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: var(--color1);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.share_button_container {
+    border: 0;
+    box-shadow: 0;
+    display: inline-flex;
+    margin: 10px;
+    width: 65px;
+}
+
+.share-buttons {
+    width: 65px;
+    border: 0;
+    box-shadow: 0;
+    margin: 5px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.pen-url {
+    margin-right: 15px;
+}
+
+.share-buttons>input[type=text],
+select {
+    width: 60vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--color2);
+}
+
+.copy-link-button {
+    border: 0;
+    color: var(--color1);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.button_in_contact_container {
+    background-color: var(--color2);
+    /*border: var(--color2);
+    border-width: 5px;
+    border-style: solid;*/
+    border: none;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 32vmax;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button_in_contact_container p {
+    font-size: 13px;
+}
+
+.button_in_contact_container i {
+    font-size: 13px;
+}
+
+.divForButtonsInContactContainer {
+    border-top-width: 5px;
+    border-top-color: var(--color2);
+    border-top-style: solid;
+    background-color: #FEFEFE;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* None of this CSS is required for the gallery and lightbox to function.*/
+
+
+/* --- BEGIN: crop images --- */
+
+
+/* Optional CSS for cropping images that aren't all the same size.*/
+
+
+/* Use Bootstrap breakpoints for consistency.*/
+
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+/* Crop thumbnail images.*/
+
+#gallery {
+    img {
+        height: 75vw;
+        object-fit: cover;
+        @media (min-width: $bootstrap-sm) {
+            height: 35vw;
+        }
+        @media (min-width: $bootstrap-lg) {
+            height: 18vw;
+        }
+    }
+}
+
+
+/* Crop images in lightbox.*/
+
+.carousel-item {
+    img {
+        height: 60vw;
+        object-fit: cover;
+        @media (min-width: $bootstrap-sm) {
+            height: 350px;
+        }
+    }
+}
+
+
+/* --- END: crop images --- */
+
+
+/* --- BEGIN: custom styling demo --- */
+
+
+/* An example of custom styling for gallery and lightbox, to show what's possible in terms of aesthetic customization.*/
+
+* {
+    transition: 0.1s;
+}
+
+#gallery.custom {
+    padding: 0 15px;
+    img {
+        display: block;
+        margin: 15px 0;
+        border-radius: 300px 30px 300px 300px;
+        &:hover {
+            border-radius: 30px 90px 30px 30px;
+        }
+    }
+}
+
+#exampleModal.custom {
+    .modal-content {
+        background: none;
+        border: none;
+    }
+    .modal-header {
+        border: none;
+        button {
+            background: none;
+            border-radius: 100px 100px 0 0;
+            padding: 5px 10px;
+            opacity: 1;
+            position: relative;
+            top: 3px;
+            border: solid 2px white;
+            @media (min-width: $bootstrap-lg) {
+                top: 15px;
+            }
+            &:hover {
+                top: 3px;
+            }
+        }
+        span {
+            color: white;
+        }
+    }
+    .modal-body {
+        padding: 0;
+        border: none;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            height: 50px;
+            width: 50px;
+            display: block;
+            position: absolute;
+            background: white;
+            border-radius: 3px 10px;
+            @media (min-width: $bootstrap-md) {
+                border-radius: 3px 30px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+        &::before {
+            top: -5px;
+            left: -5px;
+            @media (min-width: $bootstrap-md) {
+                top: -15px;
+                left: -15px;
+            }
+        }
+        &::after {
+            bottom: -5px;
+            right: -5px;
+            z-index: -1;
+            @media (min-width: $bootstrap-md) {
+                bottom: -15px;
+                right: -15px;
+            }
+        }
+    }
+    .modal-footer {
+        border: none;
+        margin-top: 60px;
+        @media (min-width: $bootstrap-lg) {
+            margin-top: 40px;
+        }
+        .btn {
+            margin: auto;
+            border: solid 2px white;
+            background: none;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+            padding: 0.2em 0.7em;
+            border: none;
+            outline: none;
+            &:hover {
+                background: white;
+                color: black;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        font-size: 2em;
+        top: auto;
+        opacity: 1;
+        bottom: -52px;
+        @media (min-width: $bootstrap-md) {
+            top: 0;
+            opacity: 0.5;
+            bottom: 0;
+        }
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        height: 30px;
+        width: 30px;
+    }
+    .carousel-control-prev {
+        @media (min-width: $bootstrap-md) {
+            left: -90px;
+        }
+    }
+    .carousel-control-next {
+        @media (min-width: $bootstrap-md) {
+            right: -90px;
+        }
+    }
+    .carousel-indicators {
+        bottom: -60px;
+        @media (min-width: $bootstrap-lg) {
+            bottom: -30px;
+        }
+        li {
+            height: 30px;
+            border-radius: 100px;
+            background: none;
+            border: solid 2px white;
+            @media (min-width: $bootstrap-lg) {
+                height: 10px;
+            }
+            &:hover {
+                background: white;
+            }
+            &.active {
+                background: white;
+            }
+        }
+    }
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.modal {
+    position: fixed;
+}
+
+.modal-dialog {
+    display: inline-block;
+    position: absolute;
+    top: 5% !important;
+    align-items: center;
+    width: 100% !important;
+    ;
+}
+
+.modal-content {
+    height: 85% !important;
+    width: 95%!important;
+}
+
+.modal-full {
+    top: 10%!important;
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 80vh;
+}
